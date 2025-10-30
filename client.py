@@ -46,14 +46,16 @@ def auto_agente(mensagem):
     if ano:
         filtros["ano"]= int(ano.group(1))
 
-    cores = ["preto", "preta", "prata", "branco", "branca", "vermelho", "vermelha", "azul"]
-    for cor in cores:
-        if cor in mensagem:
-            if cor in ["preta", "branca", "vermelha"]:
-                base = cor[:-1] 
-            else:
-                base = cor
-            filtros["cor"] = base.capitalize()
+    cores = {
+        "preto": "Preto", "preta": "Preto",
+        "branco": "Branco", "branca": "Branco",
+        "vermelho": "Vermelho", "vermelha": "Vermelho",
+        "prata": "Prata", "azul": "Azul"
+    }
+    for palavra, valor in cores.items():
+        if palavra in mensagem:
+            filtros["cor"] = valor
+            break
 
     transmissoes = ["manual", "automatica", "automático", "cvt"]
     for t in transmissoes:
@@ -96,4 +98,5 @@ def agente():
         resultados(resultado)
 
 if __name__ == "__main__":
+
     agente()
