@@ -9,5 +9,6 @@ def test_parser_multiplo():
     f=auto_agente("Gostaria de ver carros Volkswagen azul transmissão Automática e flex")
     assert f["marca"]== "Volkswagen"
     assert f["cor"]== "Azul"
-    assert f["transmissao"]== "Automatica"
+    assert f["transmissao"]== "Automática"
+
     assert f["combustivel"]== "Flex"
