@@ -67,7 +67,7 @@ pytest -vv
 ```
 
 - Vídeo Demo
-link: 
+link: https://www.youtube.com/watch?v=9mZRTAEp6m0
 
 Observações
 -
@@ -87,3 +87,4 @@ Atualmente o agente entende múltiplos filtros e retorna resultados similares!
  Parser e query engine são separados para facilitar manutenção e testes.
 
  O código é claro e legível, pronto para execução em qualquer ambiente local desde que siga as etapas acima.
+
